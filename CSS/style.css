@@ -14,13 +14,6 @@ body {
     font-family: 'ArchivoBlack',sans-serif;
 }
 
-hr {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: bold;
-}
-
 .top {
     width: 100%;
     float: left;
@@ -183,19 +176,23 @@ nav a {
 
 #Footer-text {
     float: center;
-    padding: 5% 35%;
+    text-align: center;
+    padding: 5% 32%;
+    font-family: 'ArchivoBlack',sans-serif;
 }
+
 
 #search-footer-email {
     width: 100%;
-    padding-left: 0%;
+    float: left;
+    margin-left: 15%;
 }
 
 #search-footer-email input {
     float: left;
-    width: 100%;
+    width: 65%;
     padding: 1%;
-    padding-left: 1.5%;
+    padding-left: 3%;
     border-radius: 0px;
     border: none;
     outline: none;
@@ -206,22 +203,28 @@ nav a {
 }
 
 .data-protection-information {
-    margin: 2%;
+    width: 100%;
+    margin: 1.5%;
     float: left; 
     font-family: 'ArchivoBlack',sans-serif;
 }
 
 .data-protection-information input {
+    float: left;
     vertical-align: middle;
     width: 1.5rem;
     height: 1.5rem;
     margin-top: 2%;
+    margin-left: 17%;
     accent-color: rgb(86, 188, 213);
     font-family: 'ArchivoBlack',sans-serif;
 }
 
 .data-protection-information label {
+    float: left;
+    margin-top: 2.8%;
     vertical-align: middle;
+
 }
 
 #Subscribe-mail {
@@ -232,11 +235,42 @@ nav a {
     color: white;
     background-color: black;
     font-family: 'ArchivoBlack',sans-serif;
-
 } 
 
 footer {
     width: 100%;
     float: left;
+}
+
+.Voor-Footer p {
+    float: left;
+    margin: 1.4% 6.85%;
+    margin-bottom: 1.8%;
+    font-size: 0.8rem;
+    font-family: 'ArchivoBlack',sans-serif;
+}
+
+.Voor-Footer img {
+    float:left;
+    margin: 0.3% 5%;  
+}
+
+.Voor-Footer hr {
+    margin-top: 0%;
+    font-weight: bold;
+}
+
+#Footer-InformationDIV {
+    width: 100%;
+    float: left;
+}
+
+.Footer-Information {
+    float: left;
+    margin-left: 3%;
+    margin-top: 0.10;
+    margin-right: 10%;
+    font-family: 'ArchivoBlack',sans-serif;
+    font-size: 12px;
 }
 
