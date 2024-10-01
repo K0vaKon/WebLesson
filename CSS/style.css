@@ -116,7 +116,7 @@ nav a {
     width: calc(88%/3);
     float: left;
     margin: 2%;
-    border-radius: 5%;  
+    border-radius: 2%;  
     outline: 1px solid rgb(198, 181, 181); 
     transition: -webkit-box-shadow 0.3s;
 
@@ -192,6 +192,8 @@ nav a {
     float: left;
     width: 65%;
     padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 3%;
     border-radius: 0px;
     border: none;
@@ -216,6 +218,7 @@ nav a {
     height: 1.5rem;
     margin-top: 2%;
     margin-left: 17%;
+    border-radius: 50%;
     accent-color: rgb(86, 188, 213);
     font-family: 'ArchivoBlack',sans-serif;
 }
@@ -230,7 +233,10 @@ nav a {
 #Subscribe-mail {
     width: 18%;
     height: 3rem;
-    margin: 2% calc(80%/2);
+    margin-left: calc(80%/2);
+    margin-right: calc(80%/2);
+    margin-top: 1.5%;
+    margin-bottom: 5%;
     border: none;
     color: white;
     background-color: black;
@@ -266,11 +272,30 @@ footer {
 }
 
 .Footer-Information {
+    width: 23%;
     float: left;
-    margin-left: 3%;
-    margin-top: 0.10;
-    margin-right: 10%;
+    margin-top: 0.10%;
+    margin-left: 2%;
     font-family: 'ArchivoBlack',sans-serif;
     font-size: 12px;
+    
+}
+.Footer-Information a {
+    text-decoration: none;
+    color: black;
+}
+
+.Footer-Information a:hover {
+    text-size-adjust: 5%;
+}
+
+#Payments img {
+    width: 10%;
+    margin: 0%;
+}
+
+#SocialMedia img {
+    width: 8%;
+    margin-right: 4%;
 }
 
