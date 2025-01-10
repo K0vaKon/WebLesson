@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="script" href="Javascript/script.js">
+    <link rel="shortcut icon" href="IMG/refreshIcon.png"/>
+    <title>Canon</title>
+</head>
+<body>
+    <header>
+        <div id="WebTitle">
+            <a href=""><h1>Canon</h1></a>
+        </div>
+        <div id="searchLogo">
+            <a id="SearchLogo"><img src="IMG/SearchIcon.png" alt="SearchIcon"></a>
+        </div>
+        <div id="SearchBlock">
+            <img src="IMG/SearchIcon.png" alt="SearchIcon">
+            <input type="text" placeholder="Search">
+            <a id="firstLinkMenu" href="#middleFotos">Canon</a>
+            <a href="indexProduct.html">Products</a>
+            <a href="">&bull; Gift &bull;</a>
+            <a href="indexAbout.html">&bull; About us &bull;</a>
+            <a href="#FooterBlock">&bull; Info &bull;</a>
+        </div>
+        
+    </header>
+    <div id="content">
+        <div id="HoofdInfo">
+            <p>Delighting You Always</p>
+            <p>Een exclusieve community voor creatievelingen zoals jij!</p>
+        </div>
+
+        <div id="KnopOntdek">
+            <a href="indexProduct.html"><button>Ontdek nu!</button></a>
+        </div>
+
+        <div id="whiteBlock">
+
+        </div>
+
+        <div id="KnopTop">
+            <button class="Round">Menu</button>
+        </div>
+        
+        <div id="middleFotos">
+            <div class="tweeMiddleFotos">
+                <img id="EstethicF1" src="IMG/EstethicF1.jpg" alt="EstethicF1">
+            </div>
+            <div class="middleFoto">
+                <img src="IMG/EstethicF2.jpg" alt="EstethicF2">
+            </div>
+            <div class="tweeMiddleFotos">
+                <img id="EstethicF3" src="IMG/EstethicF3.jpg" alt="EstethicF3">
+            </div>
+        </div>
+
+<script>
+    // Получаем элемент с id 'SearchLogo' и 'SearchBlock'
+const button = document.getElementById('SearchLogo');
+const block = document.getElementById('SearchBlock');
+
+// Добавляем обработчик на логотип поиска
+button.addEventListener('click', function() {
+    toggleBlockVisibility();
+});
+
+// Получаем все элементы с классом 'Round'
+const roundButtons = document.getElementsByClassName('Round');
+
+// Добавляем обработчик на каждую кнопку с классом 'Round'
+for (let i = 0; i < roundButtons.length; i++) {
+    roundButtons[i].addEventListener('click', function() {
+        toggleBlockVisibility();
+    });
+}
+
+// Функция для переключения видимости блока
+function toggleBlockVisibility() {
+    if (block.style.display === 'none' || block.style.display === '') {
+        block.style.display = 'block'; // Показываем блок
+    } else {
+        block.style.display = 'none'; // Скрываем блок
+    }
+}
+</script>
+        <div class="fotoTekst">
+            <img src="IMG/CanonR5.webp" alt="CanonR5">
+        </div>
+        <div class="tekstFoto">
+            <u><p>Filmmaking</p></u>
+            <p><b>Filmmaker Ivan D'Antonio</b> used the EOS R5 on a landscape shoot in 
+                the mountainous Abruzzo region of Italy, and found that its ability 
+                to record in 8K practically saved the shoot. "The weather was very bad 
+                in the mountains, so I had to shoot quickly during the brief periods 
+                of good light," he says. "There wasn't enough time to change lenses, 
+                but I cut some close-ups from the 8K master during the edit. The ability 
+                to shoot one take and then make camera movements in post is priceless."</p>
+                <img src="IMG/8kIcon.png" alt="8kIcon">
+        </div>
+        <div class="tekstFoto">
+            <u><p>Focus breketing</p></u>
+            <p>Up to 999 images can be shot automatically using focus bracketing,
+                 and the shift in focus can be adjusted across a 10-step scale 
+                 from narrow to wide. It's also possible to suppress changes in 
+                 image brightness by engaging the exposure smoothing feature. 
+                 For the first time in EOS cameras, the Canon EOS R7 and EOS R10 
+                 introduce in-camera stacking and cropping of depth-composite images 
+                 during focus bracketing.</p>
+                 <img src="IMG/FocusIcon.png" alt="FocusIcon">
+        </div>
+        <div class="fotoTekst">
+            <img src="IMG/CanonFood.webp" alt="CanonFood">
+        </div>
+
+            
+    </div>
+    <footer>
+        <hr>
+        <div id="FooterBlock">
+            <div class="FooterBlocks">
+                <h3>Information</h3>
+                <p>© 2024 Canon.</p>
+                <p>Gebruiksvoorwaarden</p>
+                <p>[Instagram] [Facebook] [Twitter]</p>
+            </div>
+            <div class="FooterBlocks">
+                <h3>Contact</h3>
+                <p>support@canon.com</p>
+                <p>+31 123 456 789</p>
+            </div>
+            <div class="FooterBlocks">
+                <h3>Project</h3>
+                <p>&bull; Dit project is ontwikkeld als onderdeel van een studieprogramma. &bull;</p>
+                <p>&bull; We danken iedereen voor hun steun en interesse in onze producten. &bull;</p>
+            </div>
+        </div>
+        <p id="FooterTekst">&bull; School project &bull;</p>
+    </footer>
+</body>
+</html>
